@@ -1,6 +1,6 @@
 
 const products = [{
-  name: "Jacket with the consectetur adipisicing.",
+  name: "Jacket with the ...",
   price: 200,
   img: "./images/image1.webp",
   qte: 0,
@@ -10,7 +10,7 @@ const products = [{
   img: "./images/image2.webp",
   qte: 0,
 }, {
-  name: "Phone 14 pro max akher makayn",
+  name: "Phone 14 pro max ",
   price: 450,
   img: "./images/image3.webp",
   qte: 0,
@@ -65,6 +65,7 @@ function buildDOM() {
 
 
 
+    // Read only input
     let inputQTE = document.createElement('input')
     inputQTE.setAttribute('type', 'number')
     inputQTE.setAttribute('value', product.qte)
@@ -75,6 +76,8 @@ function buildDOM() {
       
     });
 
+
+    //put the childrean in the parents
     productroot.appendChild(productTitle)
     productroot.appendChild(productIMG)
     productroot.appendChild(productPrice)
@@ -83,6 +86,7 @@ function buildDOM() {
   })
 }
 
+// CALL THE FUNCTION
 buildDOM();
 
 // COUNT PRICE
@@ -102,12 +106,16 @@ function totalPrices() {
 
 
 // COVERT OBJECT TO ARRAY
-
 // function toArray(obj) {
 // 	var result = Object.keys(obj).map((key) => [key, obj[key]]);
 	
 // 	return result;
 // }
-
 // COVERT OBJECT TO ARRAY
 
+
+
+// MAP METHODE USE
+// map() calls a function once for each element in an array.
+//  creates a new array from calling a function for every array element.
+// MAP METHODE USE
